@@ -2,10 +2,11 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/HomeScreen';
-import DetailsScreen from '../screens/DetailsScreen';
-import ProfileScreen from '../screens/ProfileScreen';
+import VehiclesScreen from '../screens/VehiclesScreen';
+import SoftwaresScreen from '../screens/SoftwaresScreen';
 //import MapScreen from '../screens/MapScreen';
-import MoviesScreen from '../screens/MoviesScreen';
+import UpdatesScreen from '../screens/UpdatesScreen';
+import CampaignsScreen from '../screens/CampaignsScreen';
 import { NavigationContainer } from '@react-navigation/native';
 
 const Tab = createBottomTabNavigator();
@@ -13,18 +14,12 @@ const Tab = createBottomTabNavigator();
 const MainTabNavigator = () => {
   return (
     <NavigationContainer>
-        <Tab.Navigator>
+        <Tab.Navigator initialRouteName="Home">
             <Tab.Screen name="Home" component={HomeScreen} />
-            <Tab.Screen 
-              name="Details" 
-              component={DetailsScreen}
-              options={{
-                headerBackTitleVisible: true,
-                headerBackTitle: 'Detail',
-                headerBackTitleStyle: { fontSize: 30 },
-              }} />
-            <Tab.Screen name="Profile" component={ProfileScreen} />
-            <Tab.Screen name="Movies" component={MoviesScreen} />
+            <Tab.Screen name="Vehicles" component={VehiclesScreen} />
+            <Tab.Screen name="Softwares" component={SoftwaresScreen} />
+            <Tab.Screen name="Updates" component={UpdatesScreen} />
+            <Tab.Screen name="Campaigns" component={CampaignsScreen} />
         </Tab.Navigator>
     </NavigationContainer>
   );

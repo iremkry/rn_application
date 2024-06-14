@@ -1,0 +1,8 @@
+{
+    "realm": "BETA",
+    "auth-server-url": "https://dev-ota.togg.com.tr/",
+    "ssl-required": "none",
+    "resource": "beta-client",
+    "public-client": true,
+    "confidential-port": 0
+  }

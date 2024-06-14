@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {ActivityIndicator, FlatList, Text, View} from 'react-native';
 
-const MoviesScreen = () => {
+const UpdatesScreen = () => {
     const [isLoading, setLoading] = useState(true);
     const [data, setData] = useState([]);
   
@@ -40,4 +40,4 @@ const MoviesScreen = () => {
     );
 }
 
-export default MoviesScreen
+export default UpdatesScreen

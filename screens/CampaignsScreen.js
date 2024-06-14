@@ -2,7 +2,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 
-const ProfileScreen = () => {
+const CampaignsScreen = () => {
   return (
     <View>
         <Text>Hello</Text>
@@ -24,4 +24,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProfileScreen;
+export default CampaignsScreen;
