@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import MainTabNavigator from '/Users/erims/Desktop/reactnativeprojects/love_project/navigation/MainTabNavigator.js';
+import MainTabNavigator from '../rn_application/navigation/MainTabNavigator';
 
 export default function App() {
   return <MainTabNavigator />;

@@ -1,11 +1,17 @@
 // screens/ProfileScreen.js
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 
 const ProfileScreen = () => {
   return (
-    <View style={styles.container}>
-      <Text>Profile Screen</Text>
+    <View>
+        <Text>Hello</Text>
+        <Image
+          source={{
+            uri: 'https://reactnative.dev/docs/assets/p_cat2.png',
+          }}
+          style={{width: 200, height: 200}}
+        />
     </View>
   );
 };
