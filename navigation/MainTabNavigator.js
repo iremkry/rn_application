@@ -6,6 +6,7 @@ import DetailsScreen from '../screens/DetailsScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 //import MapScreen from '../screens/MapScreen';
 import MoviesScreen from '../screens/MoviesScreen';
+import CalculatorScreen from '../screens/CalculatorScreen';
 import { NavigationContainer } from '@react-navigation/native';
 
 const Tab = createBottomTabNavigator();
@@ -25,6 +26,7 @@ const MainTabNavigator = () => {
               }} />
             <Tab.Screen name="Profile" component={ProfileScreen} />
             <Tab.Screen name="Movies" component={MoviesScreen} />
+            <Tab.Screen name="Calculator" component={CalculatorScreen} />
         </Tab.Navigator>
     </NavigationContainer>
   );
