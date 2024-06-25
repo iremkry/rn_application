@@ -5,6 +5,8 @@ import HomeScreen from '../screens/HomeScreen';
 import DetailsScreen from '../screens/DetailsScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import MoviesScreen from '../screens/MoviesScreen';
+import DashboardScreen from '../screens/DashboardScreen';
+import AddExpenseScreen from '../screens/AddExpenseScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -22,6 +24,8 @@ const MainTabNavigator = () => {
         }} />
       <Tab.Screen name="Profile" component={ProfileScreen} />
       <Tab.Screen name="Movies" component={MoviesScreen} />
+      <Tab.Screen name="Dashboard" component={DashboardScreen} />
+      <Tab.Screen name="AddExpense" component={AddExpenseScreen} />
     </Tab.Navigator>
   );
 };
