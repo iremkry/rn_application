@@ -8,7 +8,7 @@ const LoginScreen = ({ setIsLoggedIn }) => {
 
     const handleLogin = async () => {
         try {
-            const response = await axios.post('http://localhost:3000/login', { username, password });
+            const response = await axios.post('http://localhost:3000/users/login', { username, password });
             Alert.alert('Başarılı', response.data.message);
             setIsLoggedIn(true); 
         } catch (error) {
